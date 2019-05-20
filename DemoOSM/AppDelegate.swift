@@ -13,9 +13,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    var License = "XTUN3Q0ZGVElyN0E0QzlKbXRSZncycUxEMUlGTHFpbXVBaFF4WXp5MHVYUlRjSHNZWXo1VklxZDlBWU9GS3c9PQoKYXBwVG9rZW49MGM0ZjAwNTYtNjUxYS00ODJkLTgzZDAtOGE1YzA0YjQwYzdhCmJ1bmRsZUlkZW50aWZpZXI9Y29tLmNhcnRvLmhlbGxvbWFwLnN3aWZ0Cm9ubGluZUxpY2Vuc2U9MQpwcm9kdWN0cz1zZGstaW9zLTQuKgp3YXRlcm1hcms9Y3VzdG9tCg=="
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        NTLog.setShowInfo(true);
+        NTMapView.registerLicense(License);
         return true
     }
 
